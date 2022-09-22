@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/736x/24/37/73/2437730f7e3a5705e205e67fa2cd1020.jpg"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div>
+      <h3>Add Post</h3>
+      <input type="text" id="id" />
+      <input type="text" id="caption" />
+      <input
+        type="file"
+        id="image"
+        accept="image/*"
+        onchange="handleImage(event)"
+      />
+      <button onclick="AddPost()" id="create_btn">Create Post</button>
+
+      <h3>Delete Post</h3>
+      <input type="text" id="delete" placeholder="Enter Post id to delete" />
+      <button onclick="delete_btn()">Delete Post</button>
+
+      <h3>Update Caption</h3>
+
+      <input type="text" id="id_Update" placeholder="Enter Post Id to Update" />
+      <input type="text" id="Update_Caption" placeholder="Enter Your new  Caption" />
+      <button onclick="UpDate()">UpDate Caption</button>
+    </div>
+  </body>
+</html>
+
+<script src="create.js"></script>
+<script type="module" src="installNavBar.js"></script>
